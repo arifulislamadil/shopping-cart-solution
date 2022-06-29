@@ -20,11 +20,11 @@ function updateTotal(){
     const mobileInput = document.getElementById("mobile-number");
     const mobileNumber = mobileInput.value;
     const mobileTotal = mobileNumber*1219;
-   const caseInput = document.getElementById("case-number");
-   const caseNumber = caseInput.value;
-   const caseTotal = caseNumber * 59;
-   const subTotalAmount = mobileTotal+caseTotal;
-  const subtotal = document.getElementById("sub-total").innerText=subTotalAmount;
+    const caseInput = document.getElementById("case-number");
+    const caseNumber = caseInput.value;
+    const caseTotal = caseNumber * 59;
+    const subTotalAmount = mobileTotal+caseTotal;
+    const subtotal = document.getElementById("sub-total").innerText=subTotalAmount;
  //update tax amount
    const taxAmount = subTotalAmount/10;
    document.getElementById("tax-amount").innerText = taxAmount;
